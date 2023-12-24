@@ -1,0 +1,316 @@
+body{
+    width: 100%;
+    background-color: rgb(146, 110, 18);
+    margin-block-end: 100px;
+}
+
+.container{
+    position: relative;
+    margin: 25vh auto;
+    width: 600px;
+    height: 425px;
+}
+
+.circle-1{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background-color: #a79e8cbd;
+    background: radial-gradient(
+        circle farthest-corner at right center,
+        #a79e8cbd 20%,
+        #f4f7eb 80%
+    );
+    border-radius: 50%;
+}
+
+.circle-2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* margin: 150px 250px; */
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: orangered;
+    background: radial-gradient(
+        circle farthest-corner at left center,
+        rgba(104, 35, 10, 0.603) 20%,
+        #f4f7eb 80%
+    );
+}
+
+.card{
+    position: absolute;
+    height: 180px;
+    width: 300px;
+    top: 110px;
+    left: 110px;
+    /* backdrop-filter: blur(7.7px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.06); */
+    /* padding: 15px 25px 20px 25px; */
+    font-family: 'Montserrat', sans-serif;
+    /* backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d; */
+}
+
+.inner-card{
+    background: rgb(85, 66, 66);
+    box-shadow: 0 8px 10px rgba(0, 1, 1, 0.2);
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px 20px 25px;
+    border-radius: 20px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .inner-card{
+    transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+    color: white;
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    backface-visibility: hidden;
+}
+
+.back-face{
+    transform: rotateY(180deg);
+    margin-block: 0;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    height: 2.5rem;
+}
+
+.heading>h5{
+    letter-spacing: 0.2rem;
+}
+
+.guaranty-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#RC{
+    margin-inline-start: 42px;
+}
+
+.box1{
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    border: #ece5e5 1px solid;
+    background: rgb(85, 66, 66, 0.35);
+    /* margin-inline-start: 55px; */
+    margin-block: 30px 7px;
+}
+
+.box1>h6{
+    margin-top: 6px;
+    font-size: 0.45rem;
+    color: white;
+}
+
+.box2{
+    width: 10px;
+    height: 10px;
+    background: #f4f7eb;
+    margin-left: 65%;
+    margin-top: 1%;
+}
+
+.heading p{
+    font-size: 0.5rem;
+    margin-block: 0.1em;
+}
+
+.front-face .master-card img{
+    width: 23px;
+    height: 15px;
+    padding-inline-end: 4px;
+}
+
+.chip img{
+    margin-top: 10px;
+    width: 40px;
+    height: 30px;
+}
+
+.number h5{
+    margin-block: 25px 0;
+    letter-spacing: 0.15rem;
+    font-size: 1em;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details>h5{
+    font-size:1rem;
+    margin-block: 0;
+    letter-spacing: 3px;
+}
+
+.details>p{
+    margin-block-end: 6px;
+    font-size: 0.55rem;
+    width: 30px;
+    margin-inline-end: 5px;
+    color: orangered;
+}
+
+.details h6{
+    margin-block: 0;
+}
+
+.name{
+    margin: 2px;
+    margin-block-start: 3px;
+    font-size: 0.9em;
+}
+
+.signature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signature>h6, .signature>p{
+    font-size: 0.5em;
+    margin-block: 0;
+}
+
+.auth-signature {
+    display: flex;
+    font-size: 0.5em;
+    margin-top: 10px;
+}
+
+.auth-signature>#auth{
+    margin-inline-end: 25px;
+}
+
+.signature-space{
+    width: 190px;
+    height: 30px;
+    background: #bbbbbbb6;
+}
+
+.blank{
+    height: 30px;
+    width: 350px;
+    margin-inline: -24px;
+    margin-top: 5px;
+    background: black;
+}
+
+.sign{
+    display: flex;
+    align-items: center;
+    margin-block-end: 10px;
+}
+
+.sign>h5{
+    margin-inline-start: -5px;
+    margin-block: 0;
+}
+
+.agreement{
+    width: 280px;
+    font-size: 0.5em;
+}
+
+.agreement>p{
+    margin-block: 0.4em;
+}
+
+.footer .circle1{
+    width: 30px;
+    height: 30px;
+    background: rgb(201, 60, 9);
+    border-radius: 50%;
+}
+
+.footer .circle2{
+    width: 30px;
+    height: 30px;
+    background: #e7e416;
+    border-radius: 50%;
+    margin-inline-start: -10px;
+}
+
+.footer{
+    display: flex;
+    margin-block-start: 0;
+    justify-content: space-between;
+}
+
+.footer>.mastercard-logo{
+    display: flex;
+}
+
+
+
+/* practice card */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    /* display: none; */
+    /* perspective: 1000px; */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
